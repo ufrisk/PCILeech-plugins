@@ -1,0 +1,15 @@
+*.o
+*.dll
+*.so
+*.aps
+*.ilk
+*.pdb
+*.exp
+*.iobj
+*.ipdb
+*.lastcodeanalysissucceeded
+/.vs
+/.gitattributes
+/files/lib
+/files/temp
+

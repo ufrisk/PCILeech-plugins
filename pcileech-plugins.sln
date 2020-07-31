@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leechp_helloworld_win", "leechp_helloworld_win\leechp_helloworld_win.vcxproj", "{7826D59A-9628-4000-9224-546076BE9223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "leechp_helloworld_linux", "leechp_helloworld_linux", "{D2473DEF-8485-418B-BF39-558B6ECE8BFD}"
+	ProjectSection(SolutionItems) = preProject
+		leechp_helloworld_linux\leechp_helloworld_linux.c = leechp_helloworld_linux\leechp_helloworld_linux.c
+		leechp_helloworld_linux\Makefile = leechp_helloworld_linux\Makefile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{361C7DB5-DAEB-408A-8AE7-59D86994E485}"
+	ProjectSection(SolutionItems) = preProject
+		includes\leechcore.h = includes\leechcore.h
+		includes\pcileech.h = includes\pcileech.h
+		includes\vmmdll.h = includes\vmmdll.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{3CD5FC22-D5F3-49A3-B906-6FACC61C71E8}"
+	ProjectSection(SolutionItems) = preProject
+		files\stickykeys_cmd_win.sig = files\stickykeys_cmd_win.sig
+		files\unlock_win7x64.sig = files\unlock_win7x64.sig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7826D59A-9628-4000-9224-546076BE9223}.Debug|x64.ActiveCfg = Debug|x64
+		{7826D59A-9628-4000-9224-546076BE9223}.Debug|x64.Build.0 = Debug|x64
+		{7826D59A-9628-4000-9224-546076BE9223}.Release|x64.ActiveCfg = Debug|x64
+		{7826D59A-9628-4000-9224-546076BE9223}.Release|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F99A74F7-BBF5-4F3D-AFB0-FFC47A0E4235}
+	EndGlobalSection
+EndGlobal
