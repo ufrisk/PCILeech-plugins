@@ -174,6 +174,7 @@ BOOL VMMDLL_ConfigSet(_In_ ULONG64 fOption, _In_ ULONG64 qwValue);
 
 //-----------------------------------------------------------------------------
 // VFS - VIRTUAL FILE SYSTEM FUNCTIONALITY BELOW:
+// NB! VFS FUNCTIONALITY REQUIRES PLUGINS TO BE INITIALZED VIA CALL TO VMMDLL_InitializePlugins().
 // This is the core of MemProcFS. All implementation and analysis towards
 // the file system is possible by using functionality below. 
 //-----------------------------------------------------------------------------
@@ -297,7 +298,7 @@ NTSTATUS VMMDLL_UtilVfsWriteFile_DWORD(_Inout_ PDWORD pdwTarget, _In_ PBYTE pb, 
 * -- return
 */
 _Success_(return)
-BOOL VMMDLL_VfsInitializePlugins();
+BOOL VMMDLL_InitializePlugins();
 
 #define VMMDLL_PLUGIN_CONTEXT_MAGIC                 0xc0ffee663df9301c
 #define VMMDLL_PLUGIN_CONTEXT_VERSION               3
