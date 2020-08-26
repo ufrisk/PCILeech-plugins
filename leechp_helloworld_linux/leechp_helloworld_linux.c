@@ -107,7 +107,6 @@ void DoAction(PPCILEECH_CONTEXT ctx)
 {
     QWORD pa;
     char pb[0x1000];
-    int cb;
     // 1: Ensure version of context matches header.
     if((ctx->magic != PCILEECH_CONTEXT_MAGIC) || (ctx->version != PCILEECH_CONTEXT_VERSION)) {
         printf("Failed. Version mismatch betwen header and context.\n");
@@ -120,8 +119,7 @@ void DoAction(PPCILEECH_CONTEXT ctx)
     }
     // 3: Read 0x1000 bytes from the address.
     memset(pb, 0, 0x1000);
-    cb = LeechCore_Read(ctx->hLeechCore, pa, pb, 0x1000);
-    if(cb != 0x1000) {
+    if(LcRead(ctx->hLC, pa, 0x1000, pb)) {
         printf("Failed reading 0x1000 bytes from address: 0x%016llx\n", pa);
         return;
     }
